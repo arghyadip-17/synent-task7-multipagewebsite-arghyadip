@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learnova — All Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Learn<span>ova</span></div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="services.html" class="nav-btn active">Services</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Start learning</a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="sec-eyebrow">Courses</div>
+      <h1>Find Your Next Skill</h1>
+      <p>200+ courses across tech, design, data, and business. All include projects, live mentorship, and a certificate of completion.</p>
+    </div>
+  </section>
+
+  <!-- COURSES LISTING -->
+  <div class="courses-page">
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCourses('all', this)">All courses</button>
+      <button class="filter-btn" onclick="filterCourses('code', this)">Web Dev</button>
+      <button class="filter-btn" onclick="filterCourses('data', this)">Data Science</button>
+      <button class="filter-btn" onclick="filterCourses('design', this)">Design</button>
+      <button class="filter-btn" onclick="filterCourses('biz', this)">Business</button>
+    </div>
+
+    <div class="all-courses" id="courseGrid">
+
+      <div class="course-card" data-cat="code">
+        <div class="course-thumb" style="background:#EEF2FF;">💻</div>
+        <div class="course-body">
+          <span class="course-tag tag-code">Web Dev</span>
+          <h3>Full-Stack Development Bootcamp</h3>
+          <p>React, Node.js, PostgreSQL. Build and deploy 5 complete web applications from scratch.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.9 <span class="rating-count">(3.2k)</span></span>
+            <span class="course-price">₹4,999</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="data">
+        <div class="course-thumb" style="background:#CCFBF1;">📊</div>
+        <div class="course-body">
+          <span class="course-tag tag-data">Data Science</span>
+          <h3>Data Science &amp; Machine Learning</h3>
+          <p>Python, Pandas, ML algorithms, and a final Kaggle-style capstone project.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.8 <span class="rating-count">(2.8k)</span></span>
+            <span class="course-price">₹5,499</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="design">
+        <div class="course-thumb" style="background:#FCE7F3;">🎨</div>
+        <div class="course-body">
+          <span class="course-tag tag-design">UI/UX Design</span>
+          <h3>UI/UX Design Masterclass</h3>
+          <p>Figma, prototyping, design systems, and a 3-case-study portfolio to land your first role.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.9 <span class="rating-count">(1.9k)</span></span>
+            <span class="course-price">₹3,999</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="code">
+        <div class="course-thumb" style="background:#EEF2FF;">⚛️</div>
+        <div class="course-body">
+          <span class="course-tag tag-code">Web Dev</span>
+          <h3>Advanced React &amp; Next.js</h3>
+          <p>Hooks, context, server components, authentication, and production deployment strategies.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.7 <span class="rating-count">(1.4k)</span></span>
+            <span class="course-price">₹3,499</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="data">
+        <div class="course-thumb" style="background:#CCFBF1;">🤖</div>
+        <div class="course-body">
+          <span class="course-tag tag-data">Data Science</span>
+          <h3>AI &amp; Deep Learning</h3>
+          <p>Neural networks, PyTorch, transformers, and LLM fine-tuning fundamentals.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.8 <span class="rating-count">(980)</span></span>
+            <span class="course-price">₹6,999</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="biz">
+        <div class="course-thumb" style="background:#FEF3C7;">📈</div>
+        <div class="course-body">
+          <span class="course-tag tag-biz">Business</span>
+          <h3>Product Management</h3>
+          <p>Roadmapping, user research, metrics, and how to land a PM role at a top company.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.8 <span class="rating-count">(1.1k)</span></span>
+            <span class="course-price">₹4,499</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="code">
+        <div class="course-thumb" style="background:#EEF2FF;">🐍</div>
+        <div class="course-body">
+          <span class="course-tag tag-code">Web Dev</span>
+          <h3>Python for Beginners</h3>
+          <p>Start from zero and learn programming fundamentals through fun, bite-sized projects.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.9 <span class="rating-count">(4.1k)</span></span>
+            <span class="course-price">₹1,999</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="design">
+        <div class="course-thumb" style="background:#FCE7F3;">✏️</div>
+        <div class="course-body">
+          <span class="course-tag tag-design">UI/UX Design</span>
+          <h3>Graphic Design Fundamentals</h3>
+          <p>Typography, color theory, layout, and brand identity — the visual foundation every designer needs.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.6 <span class="rating-count">(870)</span></span>
+            <span class="course-price">₹2,499</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="biz">
+        <div class="course-thumb" style="background:#FEF3C7;">💼</div>
+        <div class="course-body">
+          <span class="course-tag tag-biz">Business</span>
+          <h3>Digital Marketing &amp; Growth</h3>
+          <p>SEO, paid ads, email marketing, analytics, and growth hacking frameworks for modern businesses.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.7 <span class="rating-count">(1.5k)</span></span>
+            <span class="course-price">₹3,299</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Learnova - Created by Arghyadip Ghosh | Empowering careers, one skill at a time.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

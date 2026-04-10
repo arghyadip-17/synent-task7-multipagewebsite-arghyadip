@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learnova — Learn Skills That Get You Hired</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Learn<span>ova</span></div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn active">Home</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="services.html" class="nav-btn">Services</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+    </div>
+    <a href="services.html" class="nav-cta">Start learning</a>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-pill">
+        <span class="pill-dot"></span>Trusted by 50,000+ learners worldwide
+      </div>
+      <h1>Learn Skills That <em>Actually</em> Get You <strong>Hired</strong></h1>
+      <p>Learnova offers expert-led online courses in tech, design, data science, and business — with live mentorship, real projects, and career support.</p>
+      <div class="hero-btns">
+        <a href="services.html" class="btn-primary">Browse all courses</a>
+        <a href="about.html" class="btn-outline">Meet our instructors</a>
+      </div>
+      <div class="hero-trust">
+        <span class="stars">★★★★★</span>
+        <span>4.9/5 from 12,000+ reviews &nbsp;·&nbsp; 92% completion rate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-band">
+    <div class="stat-box"><div class="stat-n">50K+</div><div class="stat-l">Active learners</div></div>
+    <div class="stat-box"><div class="stat-n">200+</div><div class="stat-l">Expert courses</div></div>
+    <div class="stat-box"><div class="stat-n">95%</div><div class="stat-l">Job placement rate</div></div>
+    <div class="stat-box"><div class="stat-n">40+</div><div class="stat-l">Industry mentors</div></div>
+  </div>
+
+  <!-- FEATURED COURSES -->
+  <section class="courses-section">
+    <div class="sec-eyebrow">Top picks for you</div>
+    <div class="sec-title">Most popular courses</div>
+    <div class="sec-sub">Hand-picked by our curriculum team, loved by students.</div>
+    <div class="courses-grid">
+
+      <div class="course-card">
+        <div class="course-thumb" style="background:#EEF2FF;">💻</div>
+        <div class="course-body">
+          <span class="course-tag tag-code">Web Dev</span>
+          <h3>Full-Stack Development Bootcamp</h3>
+          <p>HTML, CSS, JS, React, Node.js and PostgreSQL — build real apps from day one.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.9 <span class="rating-count">(3.2k)</span></span>
+            <span class="course-price">₹4,999</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb" style="background:#CCFBF1;">📊</div>
+        <div class="course-body">
+          <span class="course-tag tag-data">Data Science</span>
+          <h3>Data Science with Python &amp; ML</h3>
+          <p>Pandas, Numpy, Scikit-learn, and hands-on machine learning projects.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.8 <span class="rating-count">(2.8k)</span></span>
+            <span class="course-price">₹5,499</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-thumb" style="background:#FCE7F3;">🎨</div>
+        <div class="course-body">
+          <span class="course-tag tag-design">UI/UX Design</span>
+          <h3>UI/UX Design Masterclass</h3>
+          <p>Figma, design systems, user research, and portfolio-ready case studies.</p>
+          <div class="course-meta">
+            <span class="course-rating">★ 4.9 <span class="rating-count">(1.9k)</span></span>
+            <span class="course-price">₹3,999</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center; margin-top:36px;">
+      <a href="services.html" class="btn-outline">View all courses →</a>
+    </div>
+  </section>
+
+  <!-- WHY LEARNOVA -->
+  <section class="why-section">
+    <div class="why-inner">
+      <div class="sec-eyebrow" style="color:#C7D2FE;">Why Learnova</div>
+      <div class="sec-title" style="color:#fff; margin-bottom:40px;">Learning that goes beyond videos</div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Live mentorship</h3>
+          <p>Weekly 1:1 sessions with industry professionals who review your work and guide your career.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Real projects</h3>
+          <p>Every course includes capstone projects built to showcase in your portfolio and impress employers.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Learn at your pace</h3>
+          <p>Lifetime access to course content. Study mornings, nights, or weekends — your schedule, your rules.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Career guarantee</h3>
+          <p>Complete any flagship course and land a job in 6 months — or get a full refund. No questions asked.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="sec-eyebrow">Student stories</div>
+    <div class="sec-title">Real results from real learners</div>
+    <div class="sec-sub">Join thousands who changed their careers with Learnova.</div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"I went from zero coding knowledge to landing a frontend developer role in 7 months. The mentorship made all the difference."</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:#EEF2FF;color:#3730A3;">PR</div>
+          <div><h4>Priya Rao</h4><span>Frontend Dev at Razorpay</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The Data Science course was incredibly practical. I built 3 real ML projects and got hired as a data analyst within 4 months."</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:#CCFBF1;color:#065F46;">AM</div>
+          <div><h4>Aarav Mehta</h4><span>Data Analyst at Flipkart</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Learnova's UI/UX course helped me transition from graphic design to product design. The portfolio projects got me noticed immediately."</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:#FCE7F3;color:#9D174D;">SK</div>
+          <div><h4>Simran Kaur</h4><span>Product Designer at Swiggy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-inner">
+      <h2>Ready to start your journey?</h2>
+      <p>Join 50,000+ learners building in-demand skills today.</p>
+      <a href="services.html" class="btn-primary" style="font-size:16px; padding:14px 36px;">Explore all courses →</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Learnova - Created by Arghyadip Ghosh | Empowering careers, one skill at a time.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
